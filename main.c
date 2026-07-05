@@ -27,10 +27,10 @@ void AddBook()
     scanf("%d", &b[count].id);
 
     printf("Enter Book Title: ");
-    scanf("%[^\n]", b[count].title);
+    scanf("  %[^\n]", b[count].title);
 
     printf("Enter Author Name: ");
-    scanf("%[^\n]", b[count].author);
+    scanf("  %[^\n]", b[count].author);
 
     printf("Enter Quantity: ");
     scanf("%d", &b[count].quantity);
@@ -66,7 +66,7 @@ void searchBook()
     printf("Enter Book ID to search: ");
     scanf("%d", &id);
 
-    for(int i = 0; i < count; i++)s
+    for(int i = 0; i < count; i++)
     {
         if(b[i].id == id)
         {
